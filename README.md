@@ -9,7 +9,7 @@ Steps:
 4. If the datapack shows, you can verify which overlay is active by calling /reload
 
 Remarks:
->Note that in this example formats 45 to 48 will run on the 1_21 overlay and also include a data/minecraft/tags/function/load.json which is indeed a change from the default/old way data/minecraft/tags/function**s**/load.json
+>Note that in this example formats 45 to 48 will run on the 1_21 overlay and also include a 'data/minecraft/tags/function/load.json' which is indeed a change from the default or old way 'data/minecraft/tags/function`s`/load.json'
 
 >Any function in load.json will trigger when calling /reload (it wont trigger on your initial load into the world, that is inherent to minecraft:load itself)
 
