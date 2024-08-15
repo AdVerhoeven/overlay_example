@@ -1,0 +1,1 @@
+tellraw @a "Hello from 1_20_3-pre up to 1_20_4, format 26 only!"

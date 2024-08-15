@@ -1,0 +1,32 @@
+{
+    "pack":{
+        "description":"Example of datapack with overlays",
+        "pack_format": 15,
+        "supported_formats": [
+			15,
+			48
+		]
+    },
+    "overlays": {
+        "entries": [
+			{
+				"formats": {
+					"min_inclusive": 41,
+					"max_inclusive": 44
+				},
+				"directory": "1_20_5"
+			},
+			{
+				"formats": [
+					45,
+					48
+				],
+				"directory": "1_21"
+			},
+			{
+				"formats": 26,
+				"directory": "1_20_3"
+			}
+		]
+    }
+}
