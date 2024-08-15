@@ -1,0 +1,1 @@
+tellraw @a "Hello from 1_21"
