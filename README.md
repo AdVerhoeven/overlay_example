@@ -28,5 +28,5 @@ For windows one can use the following powershell command:
 
 By creating a shortcut or using a different command that results in a symbolic link you will force yourself to also add the **allowed_symlinks.txt** file in the root folder of minecraft, this should be `%AppData%/roaming/.minecraft` if you just use the defaults. On windows I would simply avoid this and use the Junction method above.
 
-Whether you have used a symlink or Junction once it has been setup it will now allow you to reload changes in the folder specified as the -Target just by calling reloading your world with /reload, unless you are using enchantments and other experimental features that require you to close and open your world (you have to restart the local server your world runs on)
+Whether you have used a symlink or Junction once it has been setup it will now allow you to reload changes in the folder specified as the -Target just by reloading your world with /reload, unless you are using enchantments and other experimental features that require you to close and open your world (you have to restart the local server your world runs on)
 
