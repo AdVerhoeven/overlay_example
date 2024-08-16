@@ -10,6 +10,17 @@
     "overlays": {
         "entries": [
 			{
+				"directory": "format16and_above_no_overrule",
+				"formats": {
+					"min_inclusive": 16,
+					"max_inclusive": 41
+				}
+			},
+			{
+				"formats": 26,
+				"directory": "1_20_3"
+			},
+			{
 				"formats": {
 					"min_inclusive": 41,
 					"max_inclusive": 44
@@ -17,16 +28,20 @@
 				"directory": "1_20_5"
 			},
 			{
+				"directory": "format16and_above_bad_practice",
+				"formats": {
+					"min_inclusive": 16,
+					"max_inclusive": 41
+				}
+			},
+			{
 				"formats": [
 					45,
 					48
 				],
 				"directory": "1_21"
-			},
-			{
-				"formats": 26,
-				"directory": "1_20_3"
 			}
+
 		]
     }
 }
