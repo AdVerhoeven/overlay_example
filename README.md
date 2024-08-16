@@ -11,7 +11,7 @@ Steps:
 6. This behaviour can be verified as the no_overrule SHOULD NOT apply when your pack_format is 26 exactly, but it SHOULD apply if your pack_format is between 27 and 40. (not 41, as that is in the other overlay)
 
 Remarks:
->Note that in this example formats 45 to 48 will run on the 1_21 overlay and also include a data/minecraft/tags/function/load.json which is indeed a change from the default/old way data/minecraft/tags/function`s`/load.json
+>Note that in this example formats 45 to 48 will run on the 1_21 overlay and also include a 'data/minecraft/tags/function/load.json' which is indeed a change from the default or old way 'data/minecraft/tags/function`s`/load.json'
 
 >Any function in load.json will trigger when calling /reload (it wont trigger on your initial load into the world, that is inherent to minecraft:load itself)
 
