@@ -7,11 +7,15 @@ Steps:
 2. The datapack only has one mcfunction, which should be added to minecraft:load for whichever overlay is active.
 3. Once in the world call /datapack list to see if the datapack loaded correctly, if not, go back to step 1
 4. If the datapack shows, you can verify which overlay is active by calling /reload
+5. You can verify how the ordering works by changing pack.mcmeta, the format16and_above overlays are nearly identical, but the order inside pack.mcmeta means the bad_practice will actually result in overruling all overlays that came before it except those that support a format above 41 and only if the game is loaded with a version that uses format 42 or higher.
+6. This behaviour can be verified as the no_overrule SHOULD NOT apply when your pack_format is 26 exactly, but it SHOULD apply if your pack_format is between 27 and 40. (not 41, as that is in the other overlay)
 
 Remarks:
 >Note that in this example formats 45 to 48 will run on the 1_21 overlay and also include a 'data/minecraft/tags/function/load.json' which is indeed a change from the default or old way 'data/minecraft/tags/function`s`/load.json'
 
 >Any function in load.json will trigger when calling /reload (it wont trigger on your initial load into the world, that is inherent to minecraft:load itself)
+
+>The order of overlays matters! Removing the last overlay entry makes a lot of changes for all versions of minecraft prior to those using pack_format 41.
 
 ## helpful links
 - https://minecraft.wiki/w/Pack_format#List_of_data_pack_formats (this is the full list, helpful if you want be truly precise with your ranges)
